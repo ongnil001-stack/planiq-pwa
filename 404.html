@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>PlanIQ</title>
+<script>
+  // GitHub Pages 404 redirect — sends all paths back to index.html
+  // so deep links and refreshes work correctly
+  var path = window.location.pathname;
+  var search = window.location.search;
+  var hash = window.location.hash;
+  var repo = path.split('/')[1];
+  // Redirect to root index
+  window.location.replace(
+    window.location.origin + '/' + repo + '/?p=' + encodeURIComponent(path.slice(1)) + (search ? '&q=' + encodeURIComponent(search.slice(1)) : '') + hash
+  );
+</script>
+</head>
+<body>
+<p>Redirecting to PlanIQ…</p>
+</body>
+</html>
