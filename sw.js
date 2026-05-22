@@ -1,7 +1,7 @@
 /* PlanIQ Service Worker v1.0
    Cache-first strategy with offline fallback page */
 
-const CACHE_NAME = 'planiq-v1';
+const CACHE_NAME = 'planiq-v2';
 const OFFLINE_URL = './offline.html';
 
 // Assets to pre-cache on install
